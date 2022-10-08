@@ -1,4 +1,4 @@
-import { createAsyncThunk,createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 export const getGreetingAsync = createAsyncThunk('fetchGreeting', async () => {
   const random = Math.floor(Math.random() * 5);

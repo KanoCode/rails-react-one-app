@@ -1,17 +1,14 @@
-import React from "react";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getGreetingAsync } from "./store/greetingReducer";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getGreetingAsync } from './store/greetingReducer';
 
 const Greetings = () => {
   const dispatch = useDispatch();
   const { loading, error, greet } = useSelector((state) => state.greeting);
 
-
   useEffect(() => {
     dispatch(getGreetingAsync());
   }, []);
-
 
   const handleGreeting = () => {
     dispatch(getGreetingAsync());
