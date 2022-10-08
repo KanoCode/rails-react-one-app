@@ -13,7 +13,7 @@ import Greetings from './greetings';
 
 function App() {
   return (
-    <>
+    <div>
       <nav>
         <Link to="/greetings">Greetings</Link>
         <Link to="/home">Home</Link>
@@ -22,7 +22,7 @@ function App() {
         <Route path="/greetings" element={<Greetings />} />
         <Route path="/home" element={<h1>Hello World!</h1>} />
       </Routes>
-    </>
+    </div>
   );
 }
 
